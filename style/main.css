@@ -1,0 +1,181 @@
+/* global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+}
+
+:focus {
+  outline-width: 0;
+}
+
+.main {
+  border: 2rem solid white;
+  height: 120vh;
+  background: #0e4bbb;
+  transition: 1s ease-out;
+}
+.main .title {
+  display: flex;
+  justify-content: center;
+  margin-top: 6vh;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.large-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 60rem;
+  width: 100rem;
+  background-image: url(/img/jl.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: 1s ease-in;
+}
+.large-picture .container .large-picture__card {
+  background: rgba(255, 255, 255, 0.671);
+  height: 25rem;
+  width: 50rem;
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease-out;
+  cursor: pointer;
+}
+.large-picture .container .large-picture__card .card--title {
+  color: black;
+  font-size: 3rem;
+  font-weight: 600;
+  transition: 1s ease-out;
+}
+.large-picture .container .large-picture__card .card--description {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 95%;
+  transition: 1s ease-out;
+}
+
+.smaller-pictures {
+  margin-top: 3rem;
+}
+.smaller-pictures .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.smaller-pictures .container .row-one {
+  display: flex;
+}
+.smaller-pictures .container .row-two {
+  display: flex;
+}
+.smaller-pictures .container .smaller-pictures__img {
+  height: 15rem;
+  width: 20rem;
+  border: 0.5rem solid white;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.smaller-pictures .container .pic-info {
+  height: 6rem;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.493);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  cursor: pointer;
+}
+.smaller-pictures .container .pic-info .hero-name {
+  font-size: 2rem;
+  text-align: center;
+}
+.smaller-pictures .container .pic-info:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: 1s ease-in;
+}
+
+.smaller-pictures__one {
+  background-image: url(/img/aquaman.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.smaller-pictures__two {
+  background-image: url(/img/cyborg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.smaller-pictures__three {
+  background-image: url(/img/batman.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.smaller-pictures__four {
+  background-image: url(/img/greenlantern.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.smaller-pictures__five {
+  background-image: url(/img/superman.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.smaller-pictures__six {
+  background-image: url(/img/theflash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.smaller-pictures__seven {
+  background-image: url(/img/wonderwoman.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.smaller-pictures__eight {
+  background-image: url(/img/hawkgirl.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}/*# sourceMappingURL=main.css.map */

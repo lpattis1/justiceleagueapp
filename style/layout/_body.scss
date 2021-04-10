@@ -1,0 +1,119 @@
+.main {
+
+    border: 2rem solid white;
+    height: 120vh;
+    background: rgb(14, 75, 187);
+    transition: 1s ease-out;
+
+    .title {
+        display: flex;
+        justify-content: center;
+        margin-top: 6vh;
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+        color: white;
+    }
+}
+
+.large-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 60rem;
+    width: 100rem;
+    background-image: url(/img/jl.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: 1s ease-in;
+
+
+    .container {
+
+        .large-picture__card {
+            background: rgba(255, 255, 255, 0.671);
+            height: 25rem;
+            width: 50rem;
+            position: absolute;
+            left: 0%;
+            bottom: 0%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: 1s ease-out;
+            cursor: pointer;
+
+            .card--title {
+                color: black;
+                font-size: 3rem;
+                font-weight: 600;
+                transition: 1s ease-out;
+            }
+
+            .card--description {
+                font-size: 1.5rem;
+                text-align: center;
+                width: 95%;
+                transition: 1s ease-out;
+            }
+        }
+    }
+}
+
+.smaller-pictures {
+    margin-top: 3rem;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .row-one {
+            display: flex;
+        }
+
+        .row-two {
+            display: flex;
+        }
+        
+
+        .smaller-pictures__img {
+            height: 15rem;
+            width: 20rem;
+            border: .5rem solid white;
+            margin-right: 2rem;
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pic-info {
+            height: 6rem;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.493);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            cursor: pointer;
+
+            .hero-name {
+                font-size: 2rem;
+                text-align: center;
+            }
+        }
+
+        .pic-info:hover {
+            opacity: 1;
+            cursor: pointer;
+            transition: 1s ease-in;
+        }
+
+    }
+}
